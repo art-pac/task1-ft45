@@ -1,4 +1,9 @@
-<p-floatlabel variant="on">
-    <input pInputText id="on_label" [(ngModel)]="value3" autocomplete="off" />
-    <label for="on_label">On Label</label>
-</p-floatlabel>
+<div class="p-4 flex flex-col items-center gap-4">
+    <p-floatLabel>
+      <input id="inputText" type="text" pInputText [(ngModel)]="value3" class="border p-2 rounded w-64">
+      <label for="inputText">Enter text</label>
+    </p-floatLabel>
+    
+    <button-demo [userInput]="value3"></button-demo>
+  </div>
+  
