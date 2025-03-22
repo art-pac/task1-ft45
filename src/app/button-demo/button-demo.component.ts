@@ -4,9 +4,14 @@ import { ButtonModule } from 'primeng/button'; // Upewnij się, że PrimeNG Butt
 
 @Component({
   selector: 'button-demo',
-  templateUrl: './button-demo.component.html',
   standalone: true,
-  imports: [ButtonModule]  // Zaimportowanie ButtonModule
+  imports: [ButtonModule],  // Zaimportowanie ButtonModule
+  template: `
+    <div class="card flex justify-center">
+      <p-button label="Check" (click)="logValue()"></p-button>
+    </div>
+  
+  `
 })
 export class ButtonDemo {
   @Input() userInput: string = ''; // Odbieranie wartości z InputTxtComponent
