@@ -1,10 +1,15 @@
-<div class="p-4 flex flex-col items-center gap-4">
-    <p-floatLabel>
-      <input id="inputText" type="text" pInputText [(ngModel)]="value3" class="border p-2 rounded w-64">
-      <label for="inputText">Enter text</label>
-    </p-floatLabel>
-    
-    <!-- Przekazanie wartości do ButtonDemoComponent -->
-    <button-demo [userInput]="value3"></button-demo>
-  </div>
-  
+<div class="">
+  <p-floatLabel>
+    <input
+      id="inputText"
+      type="text"
+      pInputText
+      [(ngModel)]="value3"
+      class="border p-2 rounded w-64"
+    />
+    <label for="inputText">Enter text</label>
+  </p-floatLabel>
+
+  <!-- Przekazanie wartości do ButtonDemoComponent -->
+  <button-demo class="" [userInput]="value3"></button-demo>
+</div>
