@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { ButtonDemo } from './button-demo/button-demo.component';
-import { InputTxtComponent } from "./input-txt/input-txt.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [ButtonDemo, InputTxtComponent]
+  imports: [NavbarComponent]
 })
 export class AppComponent {
   title = 'angular-app';

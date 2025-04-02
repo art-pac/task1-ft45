@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()" #playerForm="ngForm">
+    <div>
+        <label for="name">Player Name:</label>
+        <input type="text" id="name" name="name" ngModel required />
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" ngModel required />
+    </div>
+    <div>
+        <label for="team">Team:</label>
+        <input type="text" id="team" name="team" ngModel />
+    </div>
+    <button type="submit" [disabled]="!playerForm.valid">Add Player</button>
+</form>
